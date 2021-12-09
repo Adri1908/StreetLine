@@ -12,4 +12,5 @@ def trait(x1,y1,x2,y2):
 if __name__ == '__main__':
     trait(0,0,100,100)
     # On ferme la fenêtre s'il y a un clique gauche
+    #essai
     turtle.exitonclick()
