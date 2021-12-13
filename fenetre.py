@@ -15,4 +15,5 @@ def fenetre(x,y):
 if __name__ == '__main__':
     fenetre(0,0)
     # On ferme la fenêtre s'il y a un clique gauche
+    print("Hello thomas")
     turtle.exitonclick()
