@@ -13,15 +13,11 @@ def rectangle(x,y,w,h):
     t.up()
     t.goto(x, y)
     t.down()
-    t.forward(w)  # Forward turtle by 100 units
-    t.left(90)  # Turn turtle by 90 degree
-    t.forward(h)
-    t.left(90)
-    t.forward(w)
-    t.left(90)
-    t.forward(h)
-    t.left(90)
-    pass
+    for i in range(2):
+        t.forward(w)  # Forward turtle by 100 units
+        t.left(90)  # Turn turtle by 90 degree
+        t.forward(h)
+        t.left(90)
 
 
 if __name__ == '__main__':
