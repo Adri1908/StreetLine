@@ -11,7 +11,7 @@ def trait(x1,y1,x2,y2):
     turtle.goto(x1,y1)
     turtle.down()
     turtle.goto(x2,y2)
-    turtle.up()e
+    turtle.up()
 if __name__ == '__main__':
     trait(0,0,100,100)
     
