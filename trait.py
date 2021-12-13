@@ -8,6 +8,7 @@ def trait(x1,y1,x2,y2):
     Cette function dessine un trait entre les 2 points transmis en paramètres
     '''
     print("test 100")
+#KILIAN PUE LA GROSSE MERD*
 
 if __name__ == '__main__':
     trait(0,0,100,100)
