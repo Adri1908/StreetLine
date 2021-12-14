@@ -10,9 +10,9 @@ def rectangle(x,y,w,h):
     sur le côté en bas au milieu
     '''
     t = turtle.Turtle()
-    t.up()
+    t.pensize(0)
     t.goto(x, y)
-    t.down()
+    t.pensize(1)
     for i in range(2):
         t.forward(w)  # Forward turtle by 100 units
         t.left(90)  # Turn turtle by 90 degree
