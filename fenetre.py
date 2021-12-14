@@ -10,8 +10,7 @@ def fenetre(x,y):
         dessine une fenetre de 30 pixels sur 30 pixels
 
     '''
-    pass
-
+    
 if __name__ == '__main__':
     fenetre(0,0)
     # On ferme la fenêtre s'il y a un clique gauche
