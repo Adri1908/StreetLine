@@ -1,7 +1,10 @@
+import random
+
 from facade import facade
 from random import shuffle
 from porte import porte
 from fenetre import fenetre
+from random import randint
 import turtle
 
 def rdc(x, y_sol, c_facade, c_porte):
@@ -17,9 +20,16 @@ def rdc(x, y_sol, c_facade, c_porte):
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
     # Dessine la facade
-    pass
-
+    facade(x, y_sol, c_facade, 0)
     # Construit les 3 éléments (1 porte et 2 fenetres)
+    posPorte = random.randint(0,2)
+    for i in range(3):
+        x += 20
+        if posPorte == i:
+            porte(x,y_sol, c_porte)
+        else:
+            fenetre(x, y_sol + 20)
+        x += 20
 
     pass
 
