@@ -10,8 +10,30 @@ def fenetre(x,y):
         dessine une fenetre de 30 pixels sur 30 pixels
 
     '''
-    pass
-
+    turtle.up()
+    turtle.goto(x, y)
+    turtle.down()
+    turtle.forward(30)  # Forward turtle by 100 units
+    turtle.left(90)  # Turn turtle by 90 degree
+    turtle.forward(30)
+    turtle.left(90)
+    turtle.forward(30)
+    turtle.left(90)
+    turtle.forward(30)
+    turtle.left(90)
+    turtle.up()
+    turtle.forward(15)
+    turtle.down()
+    turtle.left(90)
+    turtle.forward(30)
+    turtle.up()
+    turtle.left(90)
+    turtle.forward(15)
+    turtle.left(90)
+    turtle.forward(15)
+    turtle.down()
+    turtle.left(90)
+    turtle.forward(30)
 if __name__ == '__main__':
     fenetre(0,0)
     # On ferme la fenêtre s'il y a un clique gauche
