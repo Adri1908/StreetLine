@@ -17,12 +17,6 @@ def facade(x, y_sol, couleur, niveau):
     rectangle(x,y_sol + 60 * niveau,140,60)
     turtle.end_fill() 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     facade(0,0,"red",0)
     # On ferme la fenêtre s'il y a un clique gauche
