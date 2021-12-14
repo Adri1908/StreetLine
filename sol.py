@@ -10,8 +10,12 @@ def sol(y_sol):
         y_sol : ordonnée du sol du la rue
     Cete fonction dessine un trait horizontale de 3 pixels d'épaisseur
     '''
-
-    pass
+    turtle.pensize(3)
+    turtle.up()
+    turtle.goto(-400,y_sol)
+    turtle.down()
+    turtle.forward(800)
+    
 
 
 if __name__ == '__main__':
