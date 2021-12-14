@@ -1,4 +1,3 @@
-from turtle import *
 import turtle
 from rectangle import rectangle
 from trait import trait
@@ -13,42 +12,42 @@ def fenetre_balcon(x,y):
         puis le balcon
     '''
     # porte-fenetre
-    color('black', 'lightgrey')
-    begin_fill()
+    turtle.color('black', 'lightgrey')
+    turtle.begin_fill()
     for i in range (2):
-        forward(30)
-        right(90)
-        forward(50)
-        right(90)
-    end_fill()
-    up()
+        turtle.forward(30)
+        turtle.right(90)
+        turtle.forward(50)
+        turtle.right(90)
+    turtle.end_fill()
+    turtle.up()
 
     # balcon
     turtle.pensize(3)
-    right(90)
-    forward(25)
-    right(90)
-    forward(5)
-    right(180)
-    down()
+    turtle.right(90)
+    turtle.forward(25)
+    turtle.right(90)
+    turtle.forward(5)
+    turtle.right(180)
+    turtle.down()
     for i in range(2):
-        forward(40)
-        right(90)
-        forward(25)
-        right(90)
+        turtle.forward(40)
+        turtle.right(90)
+        turtle.forward(25)
+        turtle.right(90)
     
     for i in range(3):
-        forward(5)
-        right(90)
-        forward(25)
-        left(90)
-        forward(5)
-        left(90)
-        forward(25)
-        right(90)
-    forward(5)
-    right(90)
-    forward(25)
+        turtle.forward(5)
+        turtle.right(90)
+        turtle.forward(25)
+        turtle.left(90)
+        turtle.forward(5)
+        turtle.left(90)
+        turtle.forward(25)
+        turtle.right(90)
+    turtle.forward(5)
+    turtle.right(90)
+    turtle.forward(25)
 
 if __name__ == '__main__':
     fenetre_balcon(0,0)
