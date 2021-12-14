@@ -14,6 +14,7 @@ def toit(x, y_sol, niveau):
     '''
     pass
 #KILIAN EST UNE BITE
+#JE CONFIRME
 if __name__ == '__main__':
     toit(0,0,0)
     # On ferme la fenêtre s'il y a un clique gauche
