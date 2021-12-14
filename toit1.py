@@ -14,6 +14,8 @@ def toit1(x, y_sol, niveau):
     turtle.goto(x,y)
 
     turtle.down()
+    turtle.fillcolor('black')
+    turtle.begin_fill()
     turtle.forward(80)
 
     turtle.left(153.44)
@@ -24,6 +26,7 @@ def toit1(x, y_sol, niveau):
 
     turtle.left(153.44)
     turtle.forward(80)
+    turtle.end_fill()
 
 if __name__ == '__main__':
     toit1(0,0,0)
