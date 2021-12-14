@@ -10,7 +10,11 @@ def porte(x,y,couleur):
     remarque:
         Cette fonction dessine une porte de 30 pixels de large pour 50 pixels de hauteur
     '''
-    pass
+    #Carré noir rempli de rouge
+    turtle.fillcolor(couleur)  #Change la couleur de remplissage à rouge
+    turtle.begin_fill()  #Précise le début du remplissage
+    rectangle(x,y,30,50)
+    turtle.end_fill()  #Précise la fin du remplissage
 
 
 if __name__ == '__main__':
