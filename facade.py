@@ -18,6 +18,6 @@ def facade(x, y_sol, couleur, niveau):
     turtle.end_fill() 
 
 if __name__ == '__main__':
-    facade(0,0,"red",0)
+    facade(0,0,(255,120,13),0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
