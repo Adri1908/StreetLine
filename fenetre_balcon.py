@@ -49,6 +49,8 @@ def fenetre_balcon(x,y):
     turtle.right(90)
     turtle.forward(25)
 
+# test
+
 if __name__ == '__main__':
     fenetre_balcon(0,0)
     # On ferme la fenêtre s'il y a un clique gauche
