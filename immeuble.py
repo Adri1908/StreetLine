@@ -1,4 +1,5 @@
 # module immeuble
+import random
 
 from couleur_aleatoire import couleur_aleatoire
 from random import randint
@@ -16,24 +17,17 @@ def immeuble(x, y_sol):
     La couleur de la façade et la couleur de la porte sont tirées au hasard
     '''
     # Nombre d'étage (aléatoire)
-
-    pass
-
+    nbEtage = random.randint(0,5)
     #Couleurs des éléments (aléatoire)
-
-    pass
-
+    c_facade = couleur_aleatoire()
+    c_porte = couleur_aleatoire()
     # Dessin du RDC
-
-    pass
-
+    rdc(x , y_sol,c_facade,c_porte)
     # Dessin des étages
-
-    pass
-
+    for etage in range(nbEtage):
+        etage(x , y_sol, c_facade, etage)
     # Dessin du toit
-
-    pass
+    toit(x, y_sol)
 
 if __name__ == '__main__':
     immeuble(0,0)
