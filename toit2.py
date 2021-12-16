@@ -13,11 +13,11 @@ def toit2(x, y_sol, niveau):
    #t = turtle.Turtle()
     turtle.up()
     turtle.pensize(10)
-    y_sol = 60 * niveau
+    y_sol += 60 * niveau
     turtle.goto(x-4,y_sol)
     turtle.down()
     turtle.pencolor('black')
-    turtle.forward(140)
+    turtle.forward(150)
     turtle.pensize(1)
     
 

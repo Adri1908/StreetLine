@@ -17,7 +17,24 @@ def etage(x, y_sol, couleur, niveau):
     # dessin des murs
 
     # dessin des 3 Eléments
-    pass
+    facade(x, y_sol, couleur, niveau)
+    i = randint(1,2)
+    if i == 1 :
+        fenetre(x+15,y_sol+60*niveau+15)
+    else : fenetre_balcon(x+15,y_sol+60*niveau+55)
+
+    i = randint(1,2)
+    if i == 1 :
+        fenetre(x+60,y_sol+60*niveau+15)
+    else : fenetre_balcon(x+60,y_sol+60*niveau+55)
+    
+    i = randint(1,2)
+    if i == 1 :
+        fenetre(x+105,y_sol+60*niveau+15)
+    else : fenetre_balcon(x+105,y_sol+60*niveau+55)
+    
+        
+    
 
 if __name__ == '__main__':
     etage(0,0,"red",0)

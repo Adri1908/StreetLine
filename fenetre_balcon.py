@@ -12,6 +12,9 @@ def fenetre_balcon(x,y):
         puis le balcon
     '''
     # porte-fenetre
+    turtle.up()
+    turtle.goto(x,y)
+    turtle.down()
     turtle.color('black', 'lightgrey')
     turtle.begin_fill()
     for i in range (2):
@@ -20,6 +23,7 @@ def fenetre_balcon(x,y):
         turtle.forward(50)
         turtle.right(90)
     turtle.end_fill()
+    
     turtle.up()
 
     # balcon
@@ -48,6 +52,8 @@ def fenetre_balcon(x,y):
     turtle.forward(5)
     turtle.right(90)
     turtle.forward(25)
+    turtle.left(90)
+
 
 # test
 

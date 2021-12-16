@@ -11,7 +11,7 @@ def toit1(x, y_sol, niveau):
     '''
     turtle.up()
     y = y_sol+60*niveau
-    turtle.goto(x,y)
+    turtle.goto(x+70,y)
 
     turtle.down()
     turtle.fillcolor('black')
