@@ -16,28 +16,10 @@ def fenetre(x,y):
     turtle.goto(x, y)
     turtle.down()
 
-    # Dessine le carré extérieur
+    # Dessine le carré
     for i in range(4):
         turtle.forward(30)
         turtle.left(90)
-
-    # Dessine la ligne centrale verticale
-    turtle.up()
-    turtle.forward(15)
-    turtle.down()
-    turtle.left(90)
-    turtle.forward(30)
-
-    # Dessine la ligne centrale horizontale
-    turtle.up()
-    turtle.left(90)
-    turtle.forward(15)
-    turtle.left(90)
-    turtle.forward(15)
-    turtle.down()
-    turtle.left(90)
-    turtle.forward(30)
-
 
 if __name__ == '__main__':
     fenetre(0,0)
