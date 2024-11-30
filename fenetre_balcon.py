@@ -17,6 +17,7 @@ def fenetre_balcon(x,y):
     turtle.down()
     turtle.color('black', 'lightgrey')
     turtle.begin_fill()
+    
     for i in range (2):
         turtle.forward(30)
         turtle.right(90)
@@ -34,13 +35,16 @@ def fenetre_balcon(x,y):
     turtle.forward(5)
     turtle.right(180)
     turtle.down()
+    
+    # Cadre 
     for i in range(2):
         turtle.forward(40)
         turtle.right(90)
         turtle.forward(25)
         turtle.right(90)
     
-    for i in range(3):
+    # Barreaux 
+    for i in range(4):
         turtle.forward(5)
         turtle.right(90)
         turtle.forward(25)
@@ -49,14 +53,9 @@ def fenetre_balcon(x,y):
         turtle.left(90)
         turtle.forward(25)
         turtle.right(90)
-    turtle.forward(5)
-    turtle.right(90)
-    turtle.forward(25)
-    turtle.left(90)
-
-
-# test
-
+        
+    turtle.pensize(1)
+    
 if __name__ == '__main__':
     fenetre_balcon(0,0)
     # On ferme la fenêtre s'il y a un clique gauche
