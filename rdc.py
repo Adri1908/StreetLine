@@ -21,17 +21,18 @@ def rdc(x, y_sol, c_facade, c_porte):
     '''
     # Dessine la facade
     facade(x, y_sol, c_facade, 0)
+    
     # Construit les 3 éléments (1 porte et 2 fenetres)
-    posPorte = random.randint(0,2)
+    position = random.randint(0,2)
+    
     for i in range(3):
         x += 20
-        if posPorte == i:
+        if position == i:
             porte(x,y_sol, c_porte)
         else:
             fenetre(x, y_sol + 20)
         x += 20
-
-    pass
+        
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")

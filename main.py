@@ -46,15 +46,14 @@ def main():
     turtle.forward(200)
     turtle.right(90)
     turtle.end_fill()
+    
     # Dessin des immeubles
-    turtle.pensize(3)
     for i in range(4):
         immeuble(-320+i*180, y_sol)
 
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
     
-
 if __name__ == '__main__':
     main()
 
