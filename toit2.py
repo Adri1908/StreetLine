@@ -10,14 +10,18 @@ def toit2(x, y_sol, niveau):
     Cette fonction dessine un toit plat d'épaisseur 10 pixels et mesurant 140 pixels de large
     '''
     
-   #t = turtle.Turtle()
     turtle.up()
     turtle.pensize(10)
+    
     y_sol += 60 * niveau
     turtle.goto(x-4,y_sol)
+    
     turtle.down()
+    
     turtle.pencolor('black')
     turtle.forward(150)
+    
+    # Retour à la taille normale
     turtle.pensize(1)
     
 
