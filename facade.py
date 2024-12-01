@@ -14,8 +14,13 @@ def facade(x, y_sol, couleur, niveau):
     '''
 
     turtle.fillcolor(couleur)  #Change la couleur de remplissage à rouge
+    
     turtle.begin_fill()  #Précise le début du remplissage
+    turtle.pensize(2)
+    
     rectangle(x,y_sol + 60 * niveau,140,60)
+    
+    turtle.pensize(1)
     turtle.end_fill() 
 
 if __name__ == '__main__':

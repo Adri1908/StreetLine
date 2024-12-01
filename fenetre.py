@@ -16,10 +16,16 @@ def fenetre(x,y):
     turtle.goto(x, y)
     turtle.down()
 
+    # Prépare le remplissage
+    turtle.fillcolor("white")  # Définit la couleur de remplissage à blanc
+    turtle.begin_fill()        # Commence le remplissage
+
     # Dessine le carré
     for i in range(4):
-        turtle.forward(30)
-        turtle.left(90)
+        turtle.forward(30)  # Avance de 30 unités
+        turtle.left(90)     # Tourne à gauche de 90 degrés
+
+    turtle.end_fill()        # Termine le remplissage
 
 if __name__ == '__main__':
     fenetre(0,0)

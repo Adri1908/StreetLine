@@ -15,7 +15,7 @@ def fenetre_balcon(x,y):
     turtle.up()
     turtle.goto(x,y)
     turtle.down()
-    turtle.color('black', 'lightgrey')
+    turtle.color('black', 'white')
     turtle.begin_fill()
     
     for i in range (2):
