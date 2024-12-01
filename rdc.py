@@ -3,6 +3,7 @@ import random
 from facade import facade
 from random import shuffle
 from porte import porte
+from porte2 import porte2
 from fenetre import fenetre
 from random import randint
 import turtle
@@ -29,7 +30,7 @@ def rdc(x, y_sol, couleur_facade, couleur_porte):
     pos = randint(0, 2)
     for i in range(len(positions)):
         if i == pos:
-            porte(x + positions[i], y_sol, couleur_porte)
+            (random.choice([porte, porte2]))(x + positions[i], y_sol, couleur_porte)
         else:
             fenetre(x + positions[i], y_sol + 20)
 
