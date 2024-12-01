@@ -7,7 +7,7 @@ from fenetre import fenetre
 from random import randint
 import turtle
 
-def rdc(x, y_sol, c_facade, c_porte):
+def rdc(x, y_sol, couleur_facade, couleur_porte):
     '''
     Paramètres
         x : (int) abscisse du centre
@@ -20,19 +20,19 @@ def rdc(x, y_sol, c_facade, c_porte):
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
     # Dessine la facade
-    facade(x, y_sol, c_facade, 0)
-    
+    facade(x, y_sol, couleur_facade, 0)
+
+    # Coordonnées des positions des 3 éléments
+    positions = [10, 55, 100]
+
     # Construit les 3 éléments (1 porte et 2 fenetres)
-    position = random.randint(0,2)
-    
-    for i in range(3):
-        x += 20
-        if position == i:
-            porte(x,y_sol, c_porte)
+    pos = randint(0, 2)
+    for i in range(len(positions)):
+        if i == pos:
+            porte(x + positions[i], y_sol, couleur_porte)
         else:
-            fenetre(x, y_sol + 20)
-        x += 20
-        
+            fenetre(x + positions[i], y_sol + 20)
+
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")
