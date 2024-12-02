@@ -12,9 +12,8 @@ def toit(x, y_sol, niveau):
     Cette fonction dessine au hasard un des 2 types de toit
 
     '''
-    if random.choice([True,False]):
-        toit1(x, y_sol, niveau) 
-    else: toit2(x, y_sol, niveau)
+    # Répartition dynamique (opération polymorphe)
+    (random.choice([toit1, toit2]))(x, y_sol, niveau)
  
 if __name__ == '__main__':
     toit(0,0,0)
