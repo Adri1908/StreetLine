@@ -2,9 +2,6 @@ import turtle
 from random import randint, shuffle
 from sol import sol
 from immeuble import immeuble
-# ------------------------------
-# ------------------------------
-# ------------------------------
 
 def main():
     turtle.setup(800, 600)
